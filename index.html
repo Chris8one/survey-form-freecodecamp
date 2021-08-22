@@ -12,18 +12,25 @@
   <form id="survey-form">
     <div class="form-group">
       <label id="name-label" for="name">Name</label>
+      <br>
       <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required/>
     </div>
+    <br>
     <div class="form-group">
       <label id="email-label" for="email">Email</label>
+      <br>
       <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required/>
     </div>
+    <br>
     <div class="form-group">
       <label id="number-label" for="number">Age</label>
+      <br>
       <input type="number" name="number" id="number" min="18" max="999999999999" class="form-control" placeholder="Enter your age">
     </div>
+    <br>
     <div class="form-group">
       <label id="dropdown-label" for="dropdown">Occupation</label>
+      <br>
       <select name="dropdown" id="dropdown">
         <option value="single">Single</option>
         <option value="engaged">Engaged</option>
@@ -31,18 +38,37 @@
       </select>
     </div>
     <div class="form-group">
-      <label id="radiobtn-label" for="spring">Spring</label>
+      <p>Favorite season of the year:</p>
+      <label for="spring">Spring</label>
       <input type="radio" name="radiobtn" id="spring" value="spring" checked>
-      <label id="radiobtn-label" for="summer">Summer</label>
+      <label for="summer">Summer</label>
       <input type="radio" name="radiobtn" id="summer" value="summer">
-      <label id="radiobtn-label" for="fall">Fall</label>
+      <label for="fall">Fall</label>
       <input type="radio" name="radiobtn" id="fall" value="fall">
-      <label id="radiobtn-label" for="winter">Winter</label>
+      <label for="winter">Winter</label>
       <input type="radio" name="radiobtn" id="winter" value="winter">
     </div>
+    <br>
     <div class="form-group">
+      <p>What programming laguages do you prefer:</p>
+      <label for="python">Python</label>
+      <input type="checkbox" name="python" id="python">
+      <label for="JavaScript">JavaScript</label>
+      <input type="checkbox" name="JavaScript" id="JavaScript">
+      <label for="Java">Java</label>
+      <input type="checkbox" name="Java" id="Java">
+      <label for="cpp">C++</label>
+      <input type="checkbox" name="cpp" id="cpp">
+      <label for="cs">C#</label>
+      <input type="checkbox" name="cs" id="cs">
+    </div>
+    <br>
+    <div class="form-group">
+      <p>Comments:</p>
+      <textarea type="text" name="comment" id="comment"></textarea>
     </div>
     <div class="form-group">
+      <button id="submit" type="submit" >Submit</button>
     </div>
   </form>
 </body>
